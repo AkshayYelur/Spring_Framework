@@ -10,6 +10,7 @@ public class Test {
 	public static void main(String[] args) {
 		System.out.println("Bank Management System");
 		//////
+		/////////
 	Scanner sc=new Scanner(System.in);
 		
 		Rbi r=new Sbi();

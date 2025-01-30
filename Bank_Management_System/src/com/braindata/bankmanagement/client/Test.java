@@ -8,7 +8,7 @@ import com.braindata.bankmanagement.serviceimpl.Sbi;
 public class Test {
 
 	public static void main(String[] args) {
-		
+		System.out.println("Bank Management System");
 		
 	Scanner sc=new Scanner(System.in);
 		

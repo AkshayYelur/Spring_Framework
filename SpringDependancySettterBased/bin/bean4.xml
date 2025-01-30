@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+<bean id="library" class="com.bookstoremanagementsystem.setterbased.Library" scope="prototype">
+	
+	<property name="Book" ref="bo">
+	<list>
+		<value>phycology of money</value>
+		<value>Tech universe</value>
+		<value>Law Of karma </value>
+		
+	</list>
+	
+	</property>
+	<property name="b" ref="bo"></property>
+</bean>
+	
+<bean id="bo" class="com.bookstoremanagementsystem.setterbased.Book" scope="prototype">
+	<property name="title" value="research" ></property>
+	<property name="author" ref="auth"></property>
+	<property name="publisher" ref="pub"></property>
+</bean>
+
+<bean id="auth" class="com.bookstoremanagementsystem.setterbased.Author" scope="prototype">
+	<property name="aname" value="jd.kalam"></property>
+</bean>
+<bean id="pub" class="com.com.bookstoremanagementsystem.setterbased.Publisher" scope="prototype">
+	<property name="pname" value="k.n.srivastava"></property>
+</bean>
+</beans>

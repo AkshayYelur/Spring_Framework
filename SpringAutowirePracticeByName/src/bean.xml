@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="sup" class="com.cjc.practice.Supplier">
+	
+	<property name="sid" value="1"></property>
+	<property name="name" value="Akshay"></property>
+	<property name="contact">
+	<list>
+		<value>9011591618</value>
+		<value>7796084808</value>
+	</list>
+	</property>
+	
+	<property name="email">
+		<set>
+			<value>yelurakshya@gmail.com</value>
+			<value>raviyelur@gmail.com</value>
+		</set>
+	</property>	
+</bean>
+    <!-- Product-->
+<bean id="p" class="com.cjc.practice.Product" autowire="byName">
+	<property name="pid" value="11"></property>
+	<property name="pname" value="wow"></property>
+	<property name="price" value="600.0"></property>
+	<property name="color" value="black"></property>
+	
+</bean>    
+    
+    
+    <bean id="or" class="com.cjc.practice.Order" autowire="byName">
+		<property name="oid" value="101"></property>
+		<property name="oname" value="cash on delivery"></property>
+		<property name="odate" value="12-09-2025"></property>
+	</bean>
+    
+    <bean id="c" class="com.cjc.practice.Customer " autowire="byName">
+		<property name="cid" value="1122"></property>
+		<property name="cname" value="rishi"></property>
+		<property name="contact">
+			<list>
+				<value>8899665588</value>
+				<value>7898547858</value>
+			</list>
+		</property>
+		<property name="address" value="solapur,ashock chowk"></property>
+	</bean>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </beans>

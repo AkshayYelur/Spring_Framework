@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+<bean id="s" class="com.singleton.Student"  scope="prototype">
+	
+<constructor-arg name="rollno" value="101"></constructor-arg>
+<constructor-arg name="name" value="Akshay"></constructor-arg>
+</bean>
+<bean id="s1" class="com.singleton.Student"  scope="prototype">
+<constructor-arg name="rollno" value="102"></constructor-arg>
+<constructor-arg name="name" value="Niraj"></constructor-arg>
+
+
+</bean>
+
+
+
+</beans>

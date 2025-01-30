@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+<bean id="s" class="com.cjc.byname.Student" autowire="byName">
+<property name="rollno" value="1"></property>
+<property name="name" value="Akshay"></property>
+</bean>
+
+<bean id="add" class="com.cjc.byname.Address">
+<property name="padd" value="Karve Nagar"></property>
+<property name="ladd" value="Pune"></property>
+</bean>
+
+<bean id="addr" class="com.cjc.byname.Address">
+<property name="padd" value="kothrud "></property>
+<property name="ladd" value="Pune"></property>
+</bean>
+
+<bean id="emp" class="com.cjc.byname.Employee" autowire="byName">
+<property name="eid" value="101"></property>
+<property name="ename" value="Rahul"></property>
+
+</bean>
+</beans>

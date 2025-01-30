@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+<bean id="s" class="com.cjc.product.Address">
+<property name="pincode" value="413006"></property>	
+<property name="area" value="New Pacchha Peth "></property>
+<property name="city" value="Solapur"></property>
+</bean>
+
+<bean id="supplier" class="com.cjc.product.Supplier">
+	<property name="sname" value="Ruvi Production"></property>
+	<property name="contact">
+		<list>
+			<value>7769084808</value>
+		</list>
+	</property>
+	
+	<property name="email">
+		<set>
+			<value>yeduraarti@gmail.com</value>
+		</set>
+	</property>
+	
+	<property name="addr" ref="s"></property>
+</bean>
+
+<bean id="product" class="com.cjc.product.Product" >
+	<property name="pname" value="Laptop"></property>
+	<property name="price" value="55000"></property>
+	<property name="color" value="Gray"></property>
+	<property name="qty" value="10"></property>
+	<property name="sup" ref="supplier"></property>
+</bean>
+
+</beans>

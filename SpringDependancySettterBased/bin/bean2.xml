@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+<bean id="s" class="com.cjc.setterbased.collectiontype.Student2">
+	<property name="mylist">
+		<list>
+			<value>01</value>
+			<value>02</value>
+			<value>03</value>
+		</list>
+	</property>
+	
+	<property name="myset">
+		<set>
+			<value>Karve Nagar</value>
+			<value>Akurdi</value>
+			<value>Baner</value>
+		</set>
+	</property>
+	
+	<property name="mymap">
+		<map>
+			<entry key="1" value="Java"></entry>
+			<entry key="2" value="Python"></entry>
+			
+		</map>
+	</property>
+	
+</bean>
+
+
+
+</beans>
